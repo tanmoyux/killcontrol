@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Behind the Kills</title>
+	</head>
+	<body>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <div class="overlay__content">
+                <div class="overlay__menu">
+                <a href="kurzfassung.html">Kurzfassung</a>
+                <a href="charaktere.html">Charaktere</a>
+                <a href="btk.html">Behind The Kills</a>
+                </div>
+                <div class="button moving-diagonal black">
+                    <div class="button__triangle button__triangle--left"></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                            Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                        </a>
+                    <div class="button__triangle button__triangle--right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo" >
+                    <a href="index.html">
+                        <img src="icons/kc_logo.svg" alt="logo"/>
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__menu" id="desktop">
+                        <a href="kurzfassung.html">Kurzfassung</a>
+                        <a href="charaktere.html">Charaktere</a>
+                        <a href="btk.html" id="active">Behind The Kills</a>
+                    </div>
+                    <div class="button moving-diagonal" id="desktop">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary white">
+                                Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                    <div class="header__icon" id="mobile" onclick="changeIcon()">
+                        <div class="header__icon--burger" id="burger-menu" onclick="openNav()"> <!-- Use any element to open/show the overlay navigation menu -->
+                            <img src="icons/menu.svg" alt="logo"/>
+                        </div>
+                        <a href="javascript:void(0)" class="header__icon--closebtn" id="closebtn" onclick="closeNav()">
+                            <img id="mobile" src="icons/close_x_white.svg" alt="logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Intro -->
+        <div class="headline">
+            <div class="headline__content">
+                <h1>Behind the Kills</h1>
+                <p class="subhl">Alles mögliche rund um Kill Control.</p>
+            </div>
+        </div>
+        <!-- BTK -->
+        <div class="btk">
+            <div class="btk__content">
+
+                <div class="btk__card moving-right white">
+                    <a href="charaktere-tanmoy.html">
+                        <img class="btk__thumbnail" src="images/illustrations/autor.png" alt="image"/>
+                        <div class="card__text">
+                            <div class="card__text--top">
+                                <h3>Autor</h3>
+                                <img src="icons/bullet_right_black.svg" alt="logo"/>              
+                            </div>
+                            <p>Tanmoy Roy</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btk__card moving-right white">
+                    <a href="btk-comicleseguide.html">
+                        <img class="btk__thumbnail" src="images/illustrations/comicleseguide.png" alt="image"/>
+                        <div class="card__text">
+                            <div class="card__text--top">
+                                <h3>Comicleseguide</h3>
+                                <img src="icons/bullet_right_black.svg" alt="logo"/>              
+                            </div>
+                            <p>Die Anleitung für Comicnoobs</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btk__card moving-right white">
+                    <a href="btk-galerie.html">
+                        <img class="btk__thumbnail" src="images/illustrations/btk.png" alt="image"/>
+                        <div class="card__text">
+                            <div class="card__text--top">
+                                <h3>Galerie</h3>
+                                <img src="icons/bullet_right_black.svg" alt="logo"/>              
+                            </div>
+                            <p>Die besten Seiten und Panels</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btk__card moving-diagonal yellow">
+                    <a href="#">
+                        <img class="btk__thumbnail" src="images/illustrations/cta-leseprobe1.png" alt="image"/>
+                        <div class="card__text">
+                            <div class="card__text--top">
+                                <h3>Leseprobe Vol.1</h3>
+                                <img src="icons/bullet_topright_black.svg" alt="logo"/>               
+                            </div>
+                            <p>Überzeuge dich selbst vom Werk!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btk__card moving-diagonal blue">
+                    <a href="#">
+                        <img class="btk__thumbnail" src="images/illustrations/cta-leseprobe2.png" alt="image"/>
+                        <div class="card__text">
+                            <div class="card__text--top">
+                                <h3>Leseprobe Vol.2</h3>
+                                <img src="icons/bullet_topright_white.svg" alt="logo"/>               
+                            </div>
+                            <p>Überzeuge dich selbst vom Werk!</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#0">
+                    <img src="icons/kc_logo.svg" alt="logo"/>
+                </a>
+            </div>
+            <div class="footer__images">
+                <img src="icons/chibi/tanmoy_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/lana_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/tom_hands.svg" alt="chibi"/>
+            </div>
+            <div class="footer__right">
+                <div class="footer__links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="cookies.html">Cookies</a>
+                    <div class="footer__links--social-media">
+                        <a href="https://www.instagram.com/tanmoy1/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/instagram.svg" alt="social media"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/linkedin.svg" alt="social media"/>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copyright small">©2024 Tanmoy Roy. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+	</body>
+</html>

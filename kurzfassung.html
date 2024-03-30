@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Kurzfassung</title>
+	</head>
+	<body>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <div class="overlay__content">
+                <div class="overlay__menu">
+                <a href="kurzfassung.html">Kurzfassung</a>
+                <a href="charaktere.html">Charaktere</a>
+                <a href="btk.html">Behind The Kills</a>
+                </div>
+                <div class="button moving-diagonal black">
+                    <div class="button__triangle button__triangle--left"></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                            Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                        </a>
+                    <div class="button__triangle button__triangle--right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo" >
+                    <a href="index.html">
+                        <img src="icons/kc_logo.svg" alt="logo"/>
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__menu" id="desktop">
+                        <a href="kurzfassung.html" id="active">Kurzfassung</a>
+                        <a href="charaktere.html">Charaktere</a>
+                        <a href="btk.html">Behind The Kills</a>
+                    </div>
+                    <div class="button moving-diagonal" id="desktop">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary white">
+                                Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                    <div class="header__icon" id="mobile" onclick="changeIcon()">
+                        <div class="header__icon--burger" id="burger-menu" onclick="openNav()"> <!-- Use any element to open/show the overlay navigation menu -->
+                            <img src="icons/menu.svg" alt="logo"/>
+                        </div>
+                        <a href="javascript:void(0)" class="header__icon--closebtn" id="closebtn" onclick="closeNav()">
+                            <img id="mobile" src="icons/close_x_white.svg" alt="logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Intro -->
+        <div class="headline">
+            <div class="headline__content">
+                <h1>Kurzfassung</h1>
+                <p class="subhl">Dient nicht als Ersatz für das Lesen des ersten Teils.</p>
+            </div>
+        </div>
+        <div class="kurzfassung">
+            <div class="kurzfassung__content">
+                <div class="content__text--50">
+                    <h2>Allgemein</h2>
+                    <p>KILL CONTROL ist eine Comicreihe, die letztendlich aus vier Volumes bestehen wird. Der erste Band fungiert nicht nur als Einführung der Protagonisten und ihrer Welt, sondern präsentiert auch gleichzeitig eine in sich geschlossene Handlung. Manche eingeführten Aspekte werden noch offen gelassen und in späteren Teilen beantwortet.</p>
+                    <p>Die Story spielt in einer Welt, in der ein geheimes Netzwerk aus Attentätern die Gesellschaft manipuliert. In diesem sogenannten Sponsorsystem finden sich die komplett gegenteiligen Protagonisten der Story, Tom und Lana, wieder. Das einzige, was beide verbindet, ist ihr Talent zum Töten und das Dach über ihrem Kopf.</p>
+                    <p>KILL CONTROL ist in erster Linie ein Charakterdrama mit Elementen aus Action und Comedy. Es erzählt eine Geschichte über moralisch fragwürdige Menschen, ohne klares Gut und Böse. Wie im echten Leben haben auch hier die Charaktere ihre dunklen Seiten, die jedoch ins Extreme überzogen sind. Die Reihe behandelt dabei ein weites Spektrum an Themen: Von Unterdrückung, Missbrauch, Trauma, psychische Gesundheit, Sucht, Manipulation, toxische Beziehungen bis hin zu Liebe, Unabhängigkeit, Familie und vieles mehr.</p>
+                    <div class="text-block">
+                        <h4>Story Arcs</h4>
+                        <p>KILL CONTROL ist in Story Arcs unterteilt. Diese Arcs sind kleinere oder größere Handlungsbögen, welche in sich geschlossene Handlungsstränge erzählen und zusammen letztendlich die Hauptgeschichte ausmachen, ähnlich wie Kapitel in einem Roman.</p>
+                    </div>
+                </div>
+                <img class="content__image--50" id="desktop" src="images/illustrations/kurzfassung.png" alt="image"/>
+            </div>
+        </div>
+        <!-- Accordion panels -->
+        <div class="accordion-panels">
+            <div class="accordion-panels__content">
+
+                <div class="accordion__item">
+                    <a href="#sps">
+                    <div class="accordion__header">
+                        <div>
+                            <h3>Sponsorsystem</h3>
+                            <p class="small">Geheimes Attentäternetzwerk</p>
+                        </div>
+                        <img class="accordion__icon" src="icons/plus.svg" alt="Icon">
+                    </div>
+                    <img class="accordion__thumbnail" src="images/kurzfassungspanels/sps.png" alt="image"/>
+                    </a>
+                    <div class="accordion__content" id="sps">
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Das Sponsorsystem ist ein geheimes Netzwerk aus Attentätern, welches die Gesellschaft manipuliert.
+                            Sponsorsystem wird mit SPS und Attentäter mit Atti abgekürzt.
+                            Die Comicreihe KILL CONTROL wird in Großbuchstaben geschrieben, die Gruppe Kill Control aus dem Comic, wird hingegen normal geschrieben.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/logos.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Namensgebung</h4>
+                                <p>Definition Sponsoring:</br>
+                                Förderung von Personen oder Gruppen durch Geld, Sachleistung, etc. mit der Erwartung von Gegenleistungen, welche die eigenen Kommunikations- und Marketingziele unterstützt.
+                                </p>
+                            </div>
+                            <div class="content__text--50">
+                                <h4 id="desktop">*</h4>
+                                <p>In diesem Fall:</br>
+                                Das Sponsorsystem unterstützt bestehende Attentäter mit Fördermittel und Sachleistungen. Als Gegenleistung arbeiten Attentäter nun für das System, es wächst und zieht so mehr Attentäter an.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Konzept</h4>
+                                <p>
+                                Das Sponsorsystem bildet ein Netzwerk aus Agenturen in verschiedenen Bezirken weltweit. Diese Agenturen werden von den sogenannten Sponsoren geleitet und beschäftigen in der Regel mehrere Attentäter, welche die Aufträge von Klienten ausführen.
+                                Agenturen befinden sich versteckt z. B. über einen geheimen Fahrstuhl eines Elektromarkts erreichbar.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/weltweit.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <p>
+                                Das System bietet zahlreiche Vorteile und Dienstleistungen an, darunter recherchierte Informationen und die Versorgung mit Waffen. Der Hauptvorteil besteht jedoch im Schutz vor anderen Attentätern, was den Attentätern eine relativ sichere Karriere ermöglicht. Im Gegenzug dazu sind die Mitglieder verpflichtet, für die Agentur zu arbeiten und den vorgegebenen Kodex zu befolgen.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/leistungen.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <p>
+                                Neben der Geldeinnahme strebt das SPS danach so viele Attentäter wie möglich anzuwerben um die Kontrolle über jeden beauftragten Mord der Welt zu erlangen. Mit zunehmender Kontrolle gewinnt das Sponsorsystem an Macht.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/sponsorcop.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Konzept</h4>
+                                <p>
+                                Das Sponsorsystem bildet ein Netzwerk aus Agenturen in verschiedenen Bezirken weltweit. Diese Agenturen werden von den sogenannten Sponsoren geleitet und beschäftigen in der Regel mehrere Attentäter, welche die Aufträge von Klienten ausführen.
+                                Agenturen befinden sich versteckt z. B. über einen geheimen Fahrstuhl eines Elektromarkts erreichbar.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/weltweit.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Hierarchie</h4>
+                                <p>
+                                Das System orientiert sich stark an der Hierarchie der italienischen Mafia. An der Spitze steht der sogenannte Sponsorboss mit seinen Beratern, gefolgt von der Kill Control, danach kommen die Sponsoren und ihre Untergebenen wie Attentäter.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/hierarchie.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Berater und Sponsorboss</h4>
+                                <p>
+                                Die Berater stellen neben dem Sponsorboss die höchste Instanz des gesamten Sponsorsystems dar. Sponsoren, die ihrem Atti zum Status der Kill Control verhelfen, steigen zum Berater auf. Diese überwachen den reibungslosen Ablauf sämtlicher Systeme innerhalb des SPS, genießen aber auch mehr Freiheiten als andere Angestellte. Über den Sponsorboss ist noch nichts bekannt.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/boss.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Kill Control</h4>
+                                <p>
+                                Die Hüter des Kodexes, die Kill Control, werden aktiv, sobald eine Regel gebrochen wird. Diese Gruppe, bestehend aus den sieben besten Attentätern im SPS, exekutiert regelbrechende Attis und sichert so den versprochenen Schutzaspekt des Systems. Die Furcht vor ihnen stellt sicher, dass kein Attentäter gegen Regel 7 des Kodexes verstößt, welche das gegenseitige Töten unterbindet.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/kill-control.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Kodex</h4>
+                                <p>
+                                Ein Vertrag mit sieben Regeln, welche man unter keinen Umständen brechen darf – andernfalls steht der Tod bevor.
+                                </p>
+                            </div>
+                            <div class="content__text--50">
+                                <h4 id="desktop">*</h4>
+                                <ol>
+                                    <li id="active">
+                                        <p>Wer eine der folgenden Regeln bricht, wird getötet.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Jedes Mitglied des Sponsorsystems muss dieses als Geheimnis wahren.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Attentäter müssen ihre ursprüngliche Identität sowie Kontakte aufgeben. Diese Regel wird für jeden neuen Identitätswechsel erneut angewendet.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Derjenige, der das Ziel ausschaltet, kriegt das Geld, unabhängig von Teambildung.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Der Pager muss zu aller Zeit bei sich getragen und dessen Funktionen genutzt werden.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Einmal im System, darf man es nicht mehr verlassen.</p>
+                                    </li>
+                                    <li id="active">
+                                        <p>Attentäter dürfen sich nicht gegenseitig behindern oder attackieren.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Sponsoren</h4>
+                                <p>
+                                Sponsoren fungieren als Agenturleiter und die Schnittstelle zwischen dem System und den Attentätern. Zu ihren Aufgaben gehören die Rekrutierung von Attentätern, die Entgegennahme von Klientenaufrträgen sowie die Bereitstellung von Sponsor-Dienstleistungen.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/sponsor.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Cover-up</h4>
+                                <p>
+                                Das Cover-Up ist eine Abteilung des Systems, zuständig für die Vertuschung von Attentaten. Ihre Aufgaben umfassen die Beseitigung von gewollten oder ungewollten Leichen, die Reinigung von Tatorten sowie die Manipulation von Beweismitteln und anderen Spuren.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/cover-up.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Pager</h4>
+                                <p>
+                                Der Pager dient praktisch als Arbeits-Smartphone und wird von vielen wie ein normales Mobilgerät verwendet. Die Besonderheit besteht darin, dass es mit dem SPS verbunden ist, wodurch man ständig anonym bleibt.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/pager1.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <p>
+                                Jeder Attentäter ist verpflichtet, den Pager stets bei sich zu tragen, da er dessen Position verfolgt. Um sicherzustellen, dass die richtige Person lokalisiert wird, wird in Intervallen ein Code abgerufen, den nur der Pager-Besitzer kennen sollte. Dieses Gerät dient dazu, mit dem SPS in Kontakt zu treten oder auch Kodexverstöße zu melden.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/pager2.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <h4>Meldesystem</h4>
+                                <p>
+                                Auf einer Mission werden immer mindestens drei Attentäter entsandt.
+                                Dies dient der Sicherheit, falls einer der Attis einen anderen attackiert oder tötet, damit der Dritte den Mörder melden kann.
+                                Dies geschieht mittels Pager durch den Codenamen oder ein Foto.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/meldesystem1.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <p>
+                                Daraufhin sendet das Sponsorsystem eine Codeabfrage an das vermeintliche Opfer. Wenn diese nicht bestätigt wird, ist vom Tod auszugehen. Im Hintergrund wird alles nochmal durch Lokalisierung der involvierten Personen rekreiert und kontrolliert.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/meldesystem2.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <div class="content__text--50">
+                                <p>
+                                Falls das Opfer überlebt, können beide sich dem Kodexbrecher stellen und ihn kampfunfähig machen, bis die Kill Control eintrifft. Denn nur sie dürfen Attentäter hinrichten.
+                                </p>
+                            </div>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/sps/meldesystem3.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Headline -->
+        <div class="headline">
+            <div class="headline__content">
+                <h2>Vol.1 Arcs</h2>
+            </div>
+        </div>
+        <!-- Accordion panels -->
+        <div class="accordion-panels">
+            <div class="accordion-panels__content">
+
+                <div class="accordion__item">
+                    <a href="#intro1">
+                    <div class="accordion__header">
+                        <div>
+                            <h3>Intro 1</h3>
+                            <p class="small">20 Seiten</p>
+                        </div>
+                        <img class="accordion__icon" src="icons/plus.svg" alt="Icon">
+                    </div>
+                    <img class="accordion__thumbnail" src="images/kurzfassungspanels/intro1.png" alt="image"/>
+                    </a>
+                    <div class="accordion__content" id="intro1">
+                        <div class="cast">
+                            <h4>Cast</h4>
+                            <div class="content__charaktere">
+                                <a href="charaktere-tom.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/tom.svg" alt="logo"/>
+                                    <p class="small">Tom</p>
+                                </a>
+                                <a href="charaktere-lana.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/lana.svg" alt="logo"/>
+                                    <p class="small">Lana</p>
+                                </a>
+                                <a href="charaktere-sponsor.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/sponsor.svg" alt="logo"/>
+                                    <p class="small">Sponsor</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Tom und Lana wohnen zusammen in einem nicht kindgerechten Apartment in den USA. Während er sich mit Prostituierten vergnügt, ist Lana gezwungen, sich mit den übrigen Frauen in der Wohnung zu unterhalten.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/intro1/intro1a.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Vor vier Jahren rettete Tom sie aus einem brennenden Lager und ließ sie seitdem bei sich wohnen.
+                            Nachdem Tom seine Angelegenheiten erledigt hat und die Frauen wegschickt, entwickelt sich ein Gespräch, das die Dynamik der beiden Attentäter weiter beleuchtet.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/intro1/intro1b.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Lana kann Tom nicht ausstehen, da er ihr Freundschaften verbietet, um ihr Doppelleben zu wahren und sie nicht ernst nimmt.
+                            Tom hingegen sieht Lana als naives Kind, was für immer in seiner Schuld steht. Außerdem lautet seine Lebensphilosophie: „Vergangene Sachen sollten in der Vergangenheit ruhen.“
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/intro1/intro1c.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            In derselben Nacht hat Lana einen Albtraum vom Lagerbrand und konfrontiert Tom, der sie daraufhin verarscht und von einem Monster erzählt, das denselben Brand überlebt hat.
+                            Sie wünscht sich, von Tom ernst genommen zu werden, da sie ja schließlich „böse“ Menschen tötet, doch er schnauzt sie nur an.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/intro1/intro1d.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <a href="#mission1">
+                    <div class="accordion__header">
+                        <div>
+                            <h3>Mission 1</h3>
+                            <p class="small">27 Seiten</p>
+                        </div>
+                        <img class="accordion__icon" src="icons/plus.svg" alt="Icon">
+                    </div>
+                    <img class="accordion__thumbnail" src="images/kurzfassungspanels/mission1.png" alt="image"/>
+                    </a>
+                    <div class="accordion__content" id="mission1">
+                        <div class="cast">
+                            <h4>Cast</h4>
+                            <div class="content__charaktere">
+                                <a href="charaktere-tom.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/tom.svg" alt="logo"/>
+                                    <p class="small">Tom</p>
+                                </a>
+                                <a href="charaktere-lana.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/lana.svg" alt="logo"/>
+                                    <p class="small">Lana</p>
+                                </a>
+                                <a href="charaktere-sponsor.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/sponsor.svg" alt="logo"/>
+                                    <p class="small">Sponsor</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Durch einen unscheinbaren Elektronikmarkt gelangen Tom und Lana in die unterirdische Agentur ihres Sponsors. Dieser informiert sie über ihre bevorstehende Mission, wobei der Sponsor mehr Interesse an ihnen hat als sie an ihm.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/mission1/mission1a.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Auf der Mission geben sich Tom und Lana als Vater und Tochter aus, die einen Ausflug in eine Bücherei machen. Dort befindet sich ihre Zielperson mit seinem Kind.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/mission1/mission1b.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Trotz zahlreicher Missverständnisse und Planänderungen schafft es Lana, die Zielperson unauffällig zu beseitigen und den Verdacht auf den eigenen Sohn zu lenken.
+                            Mit der Hilfe eines Sponsorcops gelingt beiden die Flucht. Obwohl sie sich privat oft in die Haare kriegen, sind sie auf Missionen ein starkes Team.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/mission1/mission1c.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion__item">
+                    <a href="#newfriends">
+                    <div class="accordion__header">
+                        <div>
+                            <h3>New Friends</h3>
+                            <p class="small">14 Seiten</p>
+                        </div>
+                        <img class="accordion__icon" src="icons/plus.svg" alt="Icon">
+                    </div>
+                    <img class="accordion__thumbnail" src="images/kurzfassungspanels/new-friends.png" alt="image"/>
+                    </a>
+                    <div class="accordion__content" id="newfriends">
+                        <div class="cast">
+                            <h4>Cast</h4>
+                            <div class="content__charaktere">
+                                <a href="charaktere-tom.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/tom.svg" alt="logo"/>
+                                    <p class="small">Tom</p>
+                                </a>
+                                <a href="charaktere-lana.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/lana.svg" alt="logo"/>
+                                    <p class="small">Lana</p>
+                                </a>
+                                <a href="charaktere-shishi.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/sponsor.svg" alt="logo"/>
+                                    <p class="small">Shishi</p>
+                                </a>
+                                <a href="charaktere-conner.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/conner.svg" alt="logo"/>
+                                    <p class="small">Conner</p>
+                                </a>
+                                <a href="charaktere-cop.html" class="charaktere__kachel moving-chara">
+                                    <img src="icons/chibi/cop.svg" alt="logo"/>
+                                    <p class="small">Cop</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Trotz guter Schulleistungen wird Lana in der Schule gemobbt. Tom meint, dass es für Attentäter üblich ist, einsam zu sein, also adoptiert Lana den Hund Shishiwauwau aus einer Tierhandlung, um dagegen vorzugehen.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/new-friends/new-friends1.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Lana und Shishi gehen spazieren und treffen zufälligerweise auf ihren Mitschüler Conner. Sie kommen ins Gespräch über ihre strengen Eltern und er spornt Lana an, gegen Tom zu rebellieren.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/new-friends/new-friends2.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Am selben Abend schwärmt Lana von ihm vor Tom, der weitere Treffen zwischen ihnen verbietet, da er ihn verdächtig findet. Erinnert an Conners Worte, stellt sich Lana gegen Tom und geht in ihr Zimmer.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/new-friends/new-friends3.png" alt="image"/>
+                        </div>
+                        <div class="content__text-image">
+                            <p class="content__text--50">
+                            Es stellt sich heraus, dass Conner der Sohn eines Polizisten ist, der das alles eingefädelt hat, um seine verstorbene Frau zu rächen.
+                            </p>
+                            <img class="content__image--50" src="images/kurzfassungsarcs/new-friends/new-friends4.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+       <!-- Teaser -->
+        <div class="teaser">
+            <div class="teaser__content">
+                <img class="content__image--66" id="desktop" src="images/illustrations/charaktere.png" alt="image"/>
+                <div class="content__text--33">
+                    <h2>Wer alles mitspielt</h2>
+                    <img class="content__image--mobile" id="mobile" src="images/illustrations/charaktere.png" alt="image"/>
+                    <p class="subhl">Informiere dich nochmal über deine Lieblingscharaktere der Reihe.</p>
+
+                    <div class="button moving-right">
+                        <div class="button__triangle button__triangle--left">
+                            <div class="button__triangle--left-inside"></div>
+                        </div>
+                            <a href="charaktere.html" class="button__text button__text--secondary">
+                                Zum Cast<img src="icons/bullet_right_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right">
+                            <div class="button__triangle--right-inside"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- CTA -->
+        <div class="cta">
+            <div class="cta__triangle--color blue">
+                <div class="button__triangle cta__triangle--left" id="desktop"></div>
+            </div>
+            <img class="content__image--mobile" id="mobile" src="images/illustrations/cta-kurzfassung-mobile.png" alt="image"/>
+            <div class="cta__content--color blue">
+                <div class="cta__content">
+                    <div class="content__text--33">
+                        <h2>Du bist bereit …</h2>
+                        <p>… und willst wissen, wie die Story weiter geht? Dann hol dir jetzt das Sequel!</p>
+                        <div class="button moving-diagonal">
+                            <div class="button__triangle button__triangle--left"></div>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                                    Zum Shop<img src="icons/bullet_topright_blue.svg" alt="logo"/>
+                                </a>
+                            <div class="button__triangle button__triangle--right"></div>
+                        </div>
+                    </div>
+                    <img class="content__image--66" id="desktop" src="images/illustrations/cta-kurzfassung.png" alt="image"/>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#0">
+                    <img src="icons/kc_logo.svg" alt="logo"/>
+                </a>
+            </div>
+            <div class="footer__images">
+                <img src="icons/chibi/tanmoy_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/lana_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/tom_hands.svg" alt="chibi"/>
+            </div>
+            <div class="footer__right">
+                <div class="footer__links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="cookies.html">Cookies</a>
+                    <div class="footer__links--social-media">
+                        <a href="https://www.instagram.com/tanmoy1/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/instagram.svg" alt="social media"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/linkedin.svg" alt="social media"/>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copyright small">©2024 Tanmoy Roy. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+	</body>
+</html>

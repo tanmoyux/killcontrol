@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Charaktere</title>
+	</head>
+	<body>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <div class="overlay__content">
+                <div class="overlay__menu">
+                <a href="kurzfassung.html">Kurzfassung</a>
+                <a href="charaktere.html">Charaktere</a>
+                <a href="btk.html">Behind The Kills</a>
+                </div>
+                <div class="button moving-diagonal black">
+                    <div class="button__triangle button__triangle--left"></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                            Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                        </a>
+                    <div class="button__triangle button__triangle--right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo" >
+                    <a href="index.html">
+                        <img src="icons/kc_logo.svg" alt="logo"/>
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__menu" id="desktop">
+                        <a href="kurzfassung.html">Kurzfassung</a>
+                        <a href="charaktere.html" id="active">Charaktere</a>
+                        <a href="btk.html">Behind The Kills</a>
+                    </div>
+                    <div class="button moving-diagonal" id="desktop">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary white">
+                                Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                    <div class="header__icon" id="mobile" onclick="changeIcon()">
+                        <div class="header__icon--burger" id="burger-menu" onclick="openNav()"> <!-- Use any element to open/show the overlay navigation menu -->
+                            <img src="icons/menu.svg" alt="logo"/>
+                        </div>
+                        <a href="javascript:void(0)" class="header__icon--closebtn" id="closebtn" onclick="closeNav()">
+                            <img id="mobile" src="icons/close_x_white.svg" alt="logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Intro -->
+        <div class="headline">
+            <div class="headline__content">
+                <h1>Charaktere</h1>
+                <p class="subhl">Wähle einen Charakter aus, um mehr zu erfahren.</p>
+            </div>
+        </div>
+        <div class="headline">
+            <div class="headline__content">
+                <h2>Vol.1 Cast</h2>
+            </div>
+        </div>
+        <!-- Character Select -->
+        <div class="charakter-select">
+            <div class="charakter-select__content" >
+                <a href="charaktere-tom.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/tom.svg" alt="logo"/>
+                    <p class="small">Tom</p>
+                </a>
+                <a href="charaktere-lana.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/lana.svg" alt="logo"/>
+                    <p class="small">Lana</p>
+                </a>
+                <a href="charaktere-shishi.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/shishi.svg" alt="logo"/>
+                    <p class="small">Shishi</p>
+                </a>
+                <a href="charaktere-sponsor.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/sponsor.svg" alt="logo"/>
+                    <p class="small">Sponsor</p>
+                </a>
+                <a href="charaktere-fool.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/fool.svg" alt="logo"/>
+                    <p class="small">Fool</p>
+                </a>
+                <a href="charaktere-kumpel.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/kumpel.svg" alt="logo"/>
+                    <p class="small">Kumpel</p>
+                </a>
+                <a href="charaktere-conner.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/conner.svg" alt="logo"/>
+                    <p class="small">Conner</p>
+                </a>
+                <a href="charaktere-cop.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/cop.svg" alt="logo"/>
+                    <p class="small">Cop</p>
+                </a>
+                <a href="charaktere-bonnie.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/bonnie.svg" alt="logo"/>
+                    <p class="small">Bonnie</p>
+                </a>
+                <a href="charaktere-killcontrol.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/leash.svg" alt="logo"/>
+                    <p class="small">Kill Control</p>
+                </a>
+                <a href="charaktere-tanmoy.html" class="charaktere__kachel moving-chara">
+                    <img src="icons/chibi/tanmoy.svg" alt="logo"/>
+                    <p class="small">Tanmoy</p>
+                </a>
+            </div>
+        </div>
+        <!-- Teaser -->
+        <div class="teaser">
+            <div class="teaser__content">
+                <div class="content__text--33">
+                    <h2>Was bisher geschah</h2>
+                    <img class="content__image--mobile" id="mobile" src="images/illustrations/kurzfassung.png" alt="image"/>
+                    <p class="subhl">Ist schon länger her, dass du Volume 1 gelesen hast? Kein Problem! Dieser Flashback fasst alles nochmal kurz zusammen und bereitet dich so bestens für das Sequel vor.</p>
+
+                    <div class="button moving-right">
+                        <div class="button__triangle button__triangle--left">
+                            <div class="button__triangle--left-inside"></div>
+                        </div>
+                            <a href="kurzfassung.html" class="button__text button__text--secondary">
+                                Kurzfassung<img src="icons/bullet_right_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right">
+                            <div class="button__triangle--right-inside"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="content__image--66" id="desktop" src="images/illustrations/kurzfassung.png" alt="image"/>
+            </div>
+        </div>
+        <!-- CTA -->
+        <div class="cta right">
+            <div class="cta__triangle--color blue">
+                <div class="button__triangle cta__triangle--right" id="desktop"></div>
+            </div>
+            <img class="content__image--mobile" id="mobile" src="images/illustrations/cta-charaktere-mobile.png" alt="image"/>
+            <div class="cta__content--color blue">
+                <div class="cta__content">
+                    <div class="content__text--33">
+                        <h2>Vol.2 Cast</h2>
+                        <p>Du willst die Charaktere aus dem zweiten Teil kennenlernen? Dann lies ihn doch!</p>
+                        <div class="button moving-diagonal">
+                            <div class="button__triangle button__triangle--left"></div>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                                    Zum Shop<img src="icons/bullet_topright_blue.svg" alt="logo"/>
+                                </a>
+                            <div class="button__triangle button__triangle--right"></div>
+                        </div>
+                    </div>
+                    <img class="content__image--66" id="desktop" src="images/illustrations/cta-charaktere.png" alt="image"/>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#0">
+                    <img src="icons/kc_logo.svg" alt="logo"/>
+                </a>
+            </div>
+            <div class="footer__images">
+                <img src="icons/chibi/tanmoy_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/lana_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/tom_hands.svg" alt="chibi"/>
+            </div>
+            <div class="footer__right">
+                <div class="footer__links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="cookies.html">Cookies</a>
+                    <div class="footer__links--social-media">
+                        <a href="https://www.instagram.com/tanmoy1/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/instagram.svg" alt="social media"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/linkedin.svg" alt="social media"/>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copyright small">©2024 Tanmoy Roy. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+	</body>
+</html>

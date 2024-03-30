@@ -1,0 +1,1188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Thunder';
+    src: url('fonts/Thunder-BoldLC.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Thunder-BoldLC.woff2') format('woff2'); /* Modern Browsers */
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ThunderIta';
+    src: url('fonts/Thunder-BoldLCItalic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Thunder-BoldLCItalic.woff2') format('woff2'); /* Modern Browsers */
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root{
+    --max-content-width: 1280px;
+    /* var(--max-content-width) kann ich jetzt als Variable dafür verwenden*/
+    --mobile-padding-sides: 1rem;
+    /* var(--mobile-padding-sides) */
+    --tablet-padding-sides: 2rem;
+    --blue: #2B4DFF;
+    --yellow: #FFF800;
+    --black: #1C1919;
+    --white: #EFEFEF;
+}
+
+/* Font Styles */
+html{
+    font-size: 20px;
+    hyphens: none;
+    color: var(--white);
+    background-color: var(--black);
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Thunder';
+    font-size: 4rem;
+	line-height: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08ch;
+    hyphens: auto;
+}
+
+h2{
+    font-family: 'Thunder';
+    font-size: 3.2rem;
+	line-height: 2.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08ch;
+}
+
+h3{
+    font-family: 'Thunder';
+    font-size: 2.4rem;
+	line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08ch;
+}
+
+h4{
+    font-family: 'Thunder';
+    font-size: 2rem;
+	line-height: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08ch;
+}
+
+.button a{
+    font-family: 'ThunderIta';
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08ch;
+}
+
+.subhl{
+    font-size: 1.2rem;
+	line-height: 1.5rem;
+    font-weight: 400;
+}
+
+p, li, a{
+    font-family: 'Rubik', system-ui, sans-serif;
+    font-size: 1rem;
+	line-height: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1:not(.subheader h1), h2{
+    padding-bottom: 1rem;
+}
+
+h4{
+    padding-bottom: 0.8rem;
+}
+
+p:not(.small, .card__text p, li p){
+    padding-bottom: 2rem;
+}
+
+ul{
+    list-style: none;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+}
+
+ol li{
+    padding-bottom: 1rem;
+    margin-left: -1rem;
+}
+
+.header__menu a{
+    font-size: 1rem;
+	line-height: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.overlay__menu a{
+    font-size: 1.2rem;
+	line-height: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#active:not(li p){
+    font-weight: 700;
+}
+
+.small{
+    font-size: 0.8rem;
+	line-height: 1rem;
+    font-weight: 700;
+}
+
+/* Color Styles */
+.black .button__text--primary{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.white{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.blue{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.blue .button__text--primary{
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.blue .cta__triangle--right, .blue .cta__triangle--left {
+    color: var(--blue);
+    background-color: var(--black);
+}
+
+.bluebutton{ /* Hero Button */
+    color: var(--blue);
+}
+
+.yellow{
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+.yellow .button__text--primary{
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+.yellow .cta__triangle--right, .yellow .cta__triangle--left {
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+.yellowbutton{ /* Hero Button */
+    color: var(--yellow);
+}
+
+
+/* Generel */
+*,
+*::before,
+*::after { /* Box sizing rules */
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd { /* Remove default margin */
+  margin: 0;
+}
+
+body{ /* Set core body defaults */
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture { /* Make images easier to work with */
+  max-width: 100%;
+  display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+/* Buttons */
+.button{
+    display: flex;
+}
+
+.button__triangle{
+    width: 0; 
+    height: 0; 
+}
+
+.button__triangle--left{
+    border-top: 2.8rem solid transparent; /* Changes the height */
+    border-right: 1.3rem solid currentColor; /* Changes bottom width */
+}
+
+.button__triangle--right{
+    border-bottom: 2.8rem solid transparent; /* Changes the height */
+    border-left: 1.3rem solid currentColor; /* Changes top width */
+}
+
+.button__text{
+    height: 2.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Verschiebt die Icons nach unten, deshalb unten margin-top: -0.5rem*/
+    overflow: hidden;
+}
+
+.button__text img{
+    margin-top: -0.5rem;
+    width: 1.8rem;
+    height: auto;
+}
+
+.button__text--primary{
+    line-height: 3.3rem;
+}
+
+.button__text--secondary{
+	line-height: 3rem;
+    border-top: 0.15rem solid currentColor;
+    border-bottom: 0.15rem solid currentColor;
+    gap: 0.8rem;
+}
+
+.button__triangle--left-inside{
+    position: relative;
+    z-index: 70;
+    top: -2.65rem; /* Changes y-position */
+    left: 0.3rem; /* Changes x-position, diagonal border thickness */
+    border-top: 2.5rem solid transparent; /* Changes the height, horizontal border thickness */
+    border-right: 1.1rem solid var(--black); /* Changes bottom width */
+}
+
+.button__triangle--right-inside{
+    position: relative;
+    z-index: 70;
+    top: 0.15rem; /* Changes y-position */
+    left: -1.4rem; /* Changes x-position, diagonal border thickness */
+    border-bottom: 2.5rem solid transparent; /* Changes the height, horizontal border thickness */
+    border-left: 1.1rem solid var(--black); /* Changes top width */
+}
+
+.charaktere__kachel{
+    color: var(--black); /* Hier, weil ich es sonst überall einzeln einfügen muss*/
+    background-color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.75rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    text-align: center;
+}
+
+.accordion-panels .charaktere__kachel{
+    outline: 0.1rem solid var(--black);
+}
+
+.accordion__item{
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.accordion__item img,
+.accordion__item.active .accordion__content{
+    mix-blend-mode: darken;
+}
+
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    background-color: var(--white);
+    border-radius: 0.75rem;
+}
+
+.accordion__icon{
+    margin-top: -0.3rem;
+    height: 2rem;
+    width: auto;
+}
+
+.accordion__thumbnail{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.accordion__content{
+    padding: 1rem;
+    display: none;
+}
+
+.accordion__content .content__image--50:not(#sps img){
+    border: 0.1rem solid var(--black);
+}
+
+.accordion__item.active .accordion__icon{ /* Sobald durch javascript die active-class hinzugefügt wird */
+    transform: rotate(45deg);
+    transition: transform 0.1s;
+}
+
+.accordion__item.active .accordion__header{
+    position: sticky;
+    top: 4rem;
+    z-index: 80;
+    padding-bottom: 1rem;
+    box-shadow: 0 -2rem 0 var(--black);
+}
+
+.accordion__item.active .accordion__content,
+.accordion__item.active .accordion__header .small
+{
+    display: block;
+}
+
+.accordion__item.active .accordion__thumbnail,
+.accordion__header .small
+{
+    display: none;
+}
+
+#sps,
+#intro1,
+#mission1,
+#newfriends,
+#mission2,
+#forbiddenfriends,
+#mission3,
+#coporigin,
+#tomorigin
+{
+    scroll-margin-top: 4rem; /* 10rem - Versatz durch slide-down Animation */
+}
+
+.btk__card{
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.btk__thumbnail{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__text{
+    padding: 1rem;
+    outline: 0.1rem solid var(--black);
+}
+
+.card__text--top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card__text img{
+    margin-top: -0.3rem;
+    height: 2rem;
+    width: auto;
+}
+
+
+/* Animations*/
+@keyframes diagonal {
+  from {
+    transform: translate(-0.3rem, 0.3rem);
+  }
+  to {
+    transform: translate(0.3rem, -0.3rem);
+  }
+}
+
+.moving-diagonal:hover img:not(.btk__thumbnail){
+  animation-duration: 0.6s;
+  animation-name: diagonal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes right {
+    from {
+      transform: translateX(-0.3rem);
+    }
+    to {
+      transform: translateX(0.3rem);
+    }
+  }
+  
+.moving-right:hover img:not(.btk__thumbnail){
+    animation-duration: 0.6s;
+    animation-name: right;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left {
+    from {
+      transform: translateX(0.3rem);
+    }
+    to {
+      transform: translateX(-0.3rem);
+    }
+  }
+  
+.moving-left:hover img{
+    animation-duration: 0.6s;
+    animation-name: left;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down {
+    from {
+      transform: translateY(-0.3rem);
+    }
+    to {
+      transform: translateY(0.3rem);
+    }
+  }
+  
+.moving-down:hover img{
+    animation-duration: 0.6s;
+    animation-name: down;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chara {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.05);
+    }
+  }
+  
+.moving-chara:hover img{
+    animation-duration: 0.6s;
+    animation-name: chara;
+    animation-iteration-count: infinite;
+}
+
+@keyframes accordion-open{ /* Bezieht sich auf das Icon*/
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1.5);
+    }
+  }
+  
+  .accordion__item:not(.accordion__item.active):hover .accordion__icon,
+  .subheader img:hover
+  {
+    animation-duration: 0.6s;
+    animation-name: accordion-open;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes accordion-close{
+    from {
+      transform: scale(0.5) rotate(45deg);
+    }
+    to {
+      transform: scale(1.5) rotate(45deg);
+    }
+}
+
+.accordion__item.active .accordion__header:hover .accordion__icon
+{
+    animation-duration: 0.6s;
+    animation-name: accordion-close;
+    animation-iteration-count: infinite;
+}  
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-6rem); /* Von margin-top oben abziehen*/
+      }
+      to {
+        transform: translateY(0);
+      }
+  }
+
+.accordion__item.active .accordion__content{
+    animation-duration: 0.4s;
+    animation-name: slide-down;
+}
+
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.transition-in{
+    animation: slide-in 0.4s;
+}
+
+@keyframes slide-out {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+
+.transition-out{
+    animation: slide-out 0.4s;
+}
+
+
+/* Header */
+.header{
+    position: sticky;
+    z-index: 90;
+    top: 0;
+    background-image: linear-gradient(to bottom, var(--black), 90%, rgba(28,25,25,.8)); /* Semi-transparenter Header*/
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 6rem;
+    height: auto;
+    align-self: center;
+}
+
+.header__icon--burger img, .header__icon--closebtn img{
+    height: 2rem;
+    width: auto;
+}
+
+#closebtn{
+    display: none;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-right: 1rem;
+}
+
+.header__menu a{
+    text-align: center;
+    padding-right: 2rem;
+    margin-left: 0.265rem;
+    margin-right: 0.265rem;
+}
+
+.header__menu a:hover{
+    font-weight: 700;
+}
+
+.header__menu a:hover:last-child:not(.header__menu #active){ /* Entfernt die margin um das letzte Element, damit die bolde Schrift nicht den Rest verschiebt */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header .button a{
+    font-size: 1.4rem;
+}
+
+.header .button__text img{
+    width: 1.2rem;
+    height: auto;
+}
+
+.header .button__triangle--left{
+    border-top: 2rem solid transparent; /* Changes the height */
+    border-right: 0.93rem solid currentColor; /* Changes bottom width */
+}
+
+.header .button__triangle--right{
+    border-bottom: 2rem solid transparent; /* Changes the height */
+    border-left: 0.93rem solid currentColor; /* Changes top width */
+}
+
+.header .button__text{
+    height: 2rem;
+    line-height: 2.4rem;
+}
+
+.subheader{
+    position: sticky;
+    z-index: 90;
+    top: 0;
+    background-image: linear-gradient(to bottom, var(--black), 90%, rgba(28,25,25,.8)); /* Semi-transparenter Header*/
+    padding-top: 1rem;
+}
+
+.subheader__content img{
+    margin-top: -1rem;
+    cursor: pointer;
+}
+
+.subheader__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 3.5rem;
+    background-color: var(--black); /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay__content {
+    position: relative;
+    top: 20%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay__menu a{
+    padding: 1rem;
+    text-decoration: none;
+    display: block; /* Display block instead of inline */
+  }
+
+  .overlay .button{
+    padding-top: 0.8rem;
+  }
+
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer__logo{
+    align-self: center;
+    width: 8rem;
+    height: auto;
+}
+
+.footer__images, .footer__links, .footer__links--social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__images img{
+    height: 3rem;
+    width: auto;
+}
+
+.footer__links{
+    padding-bottom: 1rem;
+}
+
+.footer__links--social-media{
+    gap: 1rem;
+}
+
+.footer a{
+    text-decoration: underline;
+}
+
+.footer__copyright{
+    text-align: center;
+}
+
+
+/* Content */
+.hero{
+    background-color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("images_hq/gifs/M-gif.gif");
+    height: calc(100vh - 3.5rem); /* You must set a specified height, minus the height of the header */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__logo{
+    width: 720px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.hero__content p{
+    text-align: center;
+    padding-bottom: 1.1rem;
+}
+
+.hero__content .button{
+    padding-bottom: 1.1rem;
+}
+
+.headline__content{
+    padding-top: 2rem;
+}
+
+.headline__content--left{
+    padding-top: 2rem;
+}
+
+.headline__content--button{
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.teaser__content{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.cta{
+    padding-top: 2rem;
+}
+
+.cta__content{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.kurzfassung__content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.accordion-panels{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.content__image--mobile:not(.cta img){
+    padding-bottom: 2rem;
+}
+
+.charakter-select__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.steckbrief__content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cast{
+    padding-bottom: 1rem;
+}
+
+.content__charaktere{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.btk__content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.comicleseguide__content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.galerie__content{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.galerie__content img{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Text-Sections*/
+.text__division{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo .content__text--50{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: var(--mobile-padding-sides); /* Da es auf Desktp und auch auf Mobile dieses padding braucht */
+    padding-right: var(--mobile-padding-sides);
+}
+
+.comicleseguide__content > *:nth-last-child(n+2) {
+    padding-bottom: 3rem;
+}
+
+.content__text-image{ /* Bezieht sich auf inneres des Accordeonpanels */
+    padding-bottom: 2rem;
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px){
+    
+    #mobile{
+        display: none;
+    }
+
+    .header__content,
+    .subheader__content,
+    .footer,
+    .headline__content,
+    .headline__content--left,
+    .headline__content--button,
+    .promo__content,
+    .teaser__content,
+    .cta__content,
+    .kurzfassung__content,
+    .steckbrief__content,
+    .accordion-panels__content,
+    .btk__content,
+    .comicleseguide__content,
+    .galerie__content
+    {
+        max-width: var(--max-content-width);
+        width: auto;
+        margin: 0 auto;
+    }
+
+    /* Desktop__Footer */
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer__images{
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* Desktop__Buttons */
+    .content__buttons{ /* Im Hero */
+        display: flex;
+        justify-content: center;
+    }
+
+    .button__text{ /* Begrenzt Weite von Buttons auf Desktop*/
+        width: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+     /* Desktop__Text-Sections */
+     .content__text--50{
+        width: 50vw;
+    }
+
+    .content__text--33{
+        width: 40%;
+    }
+
+    .content__text-image{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    /* Desktop__Image-Sections */
+    .content__image--100 {
+        width: calc(100vw / 2); /*sorgt dafür, dass die Hälfte des Screens ausgefüllt wird*/
+        height: 100%;
+        object-fit: cover;
+        margin-left: calc((100vw - var(--max-content-width)) / 2 *-1); /* Berechnet die Margin um den Content herum für eine Seite und subtrahiert es von links für 0 Margin links */
+    }
+
+    .content__image--66{
+        width: 60%;
+    }
+
+    .content__image--50{
+        width: 50%;
+        height: 100%;
+    }
+
+    .content__text-image .content__image--66{
+        height: 100%;
+    }
+
+    .kurzfassung .content__image--50{
+        position: sticky;
+        top: 6rem;
+    }
+
+    .steckbrief .content__image--50{
+        position: sticky;
+        top: 5rem;
+    }
+
+    .cta .content__image--66{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 80;
+    }
+
+    .right .cta__content .content__image--66{
+        left: 0;
+    }
+
+
+    /* Desktop__Content */
+    .hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("images_hq/gifs/D-gif.gif");
+    }
+
+    .hero .content__text{
+        width: 50ch;
+        margin: 0 auto;
+    }
+
+    .content__logo{
+        margin-left: 3rem;
+    }
+
+    .headline__content{
+        text-align: center;
+    }
+
+    .promo__content,
+    .teaser__content,
+    .cta__content
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;    
+        align-items: center;
+    }
+
+    .cta__content{
+        position: relative;
+    }
+
+    .right .cta__content{
+        flex-direction: row-reverse;
+     }
+    
+    .cta__triangle--left{
+        border-top: 8rem solid transparent; /* Changes the height */
+        border-right: 99vw solid currentColor; /* Changes bottom width */
+        margin-right: auto; 
+        margin-left: 0;
+    }
+    
+    .cta__triangle--right{
+        border-top: 8rem solid transparent; /* Changes the height */
+        border-left: 99vw solid currentColor; /* Changes bottom width */
+        margin-left: auto; 
+        margin-right: 0;
+    }
+
+    .kurzfassung__content,
+    .steckbrief__content
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .charakter-select__content{
+        max-width: calc(var(--max-content-width) / 2);
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .accordion__item{
+        max-width: calc(var(--max-content-width) / 2);
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .accordion__item.active{
+        max-width: calc(var(--max-content-width) / 1.25);
+    }
+
+    .accordion__header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+
+    .accordion__content{
+        padding: 2rem;
+    }
+
+    .btk__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 2rem;
+        row-gap: 0rem;
+    }
+
+    .galerie__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 800px){ 
+    
+    #desktop{
+        display: none;
+    }
+
+    .header__content,
+    .subheader__content,
+    .overlay .button,
+    .footer,
+    .hero__content,
+    .headline__content,
+    .headline__content--left,
+    .headline__content--button,
+    .teaser__content,
+    .cta__content,
+    .kurzfassung__content,
+    .steckbrief__content,
+    .charakter-select__content,
+    .accordion-panels__content,
+    .btk__content,
+    .comicleseguide__content
+    {
+        padding-left: var(--mobile-padding-sides);
+        padding-right: var(--mobile-padding-sides);
+    }
+
+    .footer__logo, .footer__images{
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 800px) and (max-width: 1280px){
+    
+    .header__content,
+    .subheader__content,
+    .footer, 
+    .headline__content,
+    .headline__content--left,
+    .headline__content--button,
+    .teaser__content, 
+    .cta__content, 
+    .kurzfassung__content, 
+    .steckbrief__content, 
+    .charakter-select__content,
+    .accordion-panels__content,
+    .btk__content,
+    .comicleseguide__content,
+    .galerie__content
+    {
+        padding-left: var(--tablet-padding-sides);
+        padding-right: var(--tablet-padding-sides);
+    }
+
+    .promo__content{
+        padding-right: 2rem;
+    }
+
+    .header #desktop{
+        display: none;
+    }
+
+    .header #mobile{
+        display: block;
+    }
+
+    .overlay .button{
+        width: 16.5rem;
+        margin: 0 auto; /* Damit das funktioniert muss man vorher eine width bestimmen */
+    }
+
+    .footer__links{
+        padding-top: 1rem;
+    }
+
+    .content__image--100 {
+        width: 50vw;
+        height: 100vh;
+        object-fit: cover;
+        margin-left: auto;
+    }
+
+    .cta__triangle--left, .cta__triangle--right{
+        border-top: 4rem solid transparent; /* Changes the height */
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Startseite</title>
+	</head>
+	<body>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <div class="overlay__content">
+                <div class="overlay__menu">
+                <a href="kurzfassung.html">Kurzfassung</a>
+                <a href="charaktere.html">Charaktere</a>
+                <a href="btk.html">Behind The Kills</a>
+                </div>
+                <div class="button moving-diagonal black">
+                    <div class="button__triangle button__triangle--left"></div>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                            Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                        </a>
+                    <div class="button__triangle button__triangle--right"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo" >
+                    <a href="index.html">
+                        <img src="icons/kc_logo.svg" alt="logo"/>
+                    </a>
+                </div>
+                <div class="header__right">
+                    <div class="header__menu" id="desktop">
+                        <a href="kurzfassung.html">Kurzfassung</a>
+                        <a href="charaktere.html">Charaktere</a>
+                        <a href="btk.html">Behind The Kills</a>
+                    </div>
+                    <div class="button moving-diagonal" id="desktop">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary white">
+                                Zum Shop<img src="icons/bullet_topright_black.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                    <div class="header__icon" id="mobile" onclick="changeIcon()">
+                        <div class="header__icon--burger" id="burger-menu" onclick="openNav()"> <!-- Use any element to open/show the overlay navigation menu -->
+                            <img src="icons/menu.svg" alt="logo"/>
+                        </div>
+                        <a href="javascript:void(0)" class="header__icon--closebtn" id="closebtn" onclick="closeNav()">
+                            <img id="mobile" src="icons/close_x_white.svg" alt="logo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero__content">
+                <img class="content__logo" src="icons/kc_logo.svg" alt="logo"/>
+                <div class="content__text">
+                    <p>Auf dieser Website findest du alles rund um die Comicreihe mit Inhalten für Veteranen und Neulinge.</p>
+                    <p>Wie vertraut bist du mit der Reihe?</p>
+                </div>
+                <div class="content__buttons">
+                    <div class="button moving-down bluebutton">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#promo1" class="button__text button__text--primary blue">
+                                Bereits gelesen<img src="icons/bullet_down_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                    <div class="button moving-down yellowbutton">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#btk" class="button__text button__text--primary yellow">
+                                Neu zur Reihe<img src="icons/bullet_down_black.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Promo1 -->
+        <div id="promo1" style="scroll-margin-top: 4rem;">
+            <iframe src="https://www.youtube.com/embed/tWJFr4MVAoY?si=HZs_SDm6BcoZrXQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="promo blue">
+            <div class="promo__content">
+                <img class="content__image--100" src="images/startseite/kc2_cover_blank.jpg" alt="cover"/>
+                <div class="content__text--50">
+                    <h2>Das warten hat ein Ende!</h2>
+                    <p>Einen Monat nach den Ereignissen des letzten Bands leidet Lana schlimmer denn je unter Toms Obhut. Doch auch Toms Alltag wird auf den Kopf gestellt. Nach einer missglückten Mission, welche den Handlungsverlauf für immer verändert, finden sich beide Attentäter in den verschiedensten Schauplätzen mit einer Vielzahl neuer Feinde wieder. Inmitten dieses Chaos kämpfen Lana und Tom nicht nur gegen äußere Bedrohungen, sondern auch mit den Dämonen ihrer körperlichen und mentalen Verfassung. Sind sie dieser Aufgabe gewachsen? Wird Lana jemals Toms Kontrolle entkommen? Und was war der Auslöser des Ganzen? Eine Achterbahn der Emotionen in diesem dramatischen Sequel.</p>
+                    <div class="text-block">
+                        <h4>Genre</h4>
+                        <p>Drama, Action, Comedy, Coming of Age, Psychological, Slice of Life, Erotic (kinda)</p>
+                    </div>
+                    <div class="text__division--50">
+                        <div>
+                            <h4>Veröffentlichung</h4>
+                            <p>07.01.2024</p>
+                        </div>
+                        <div>
+                            <h4>Seiten</h4>
+                            <p>208</p>
+                        </div>
+                    </div>
+                    <div class="button moving-diagonal">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                                Zum Shop<img src="icons/bullet_topright_blue.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <!-- Teaser -->
+        <div class="teaser">
+            <div class="teaser__content">
+                <div class="content__text--33">
+                    <h2>Was bisher geschah</h2>
+                    <img class="content__image--mobile" id="mobile" src="images/illustrations/kurzfassung.png" alt="image"/>
+                    <p class="subhl">Ist schon länger her, dass du Volume 1 gelesen hast? Kein Problem! Dieser Flashback fasst alles nochmal kurz zusammen und bereitet dich so bestens für das Sequel vor.</p>
+
+                    <div class="button moving-right">
+                        <div class="button__triangle button__triangle--left">
+                            <div class="button__triangle--left-inside"></div>
+                        </div>
+                            <a href="kurzfassung.html" class="button__text button__text--secondary">
+                                Kurzfassung<img src="icons/bullet_right_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right">
+                            <div class="button__triangle--right-inside"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="content__image--66" id="desktop" src="images/illustrations/kurzfassung.png" alt="image"/>
+            </div>
+        </div>
+
+        <div class="teaser">
+            <div class="teaser__content">
+                <img class="content__image--66" id="desktop" src="images/illustrations/charaktere.png" alt="image"/>
+                <div class="content__text--33">
+                    <h2>Wer alles mitspielt</h2>
+                    <img class="content__image--mobile" id="mobile" src="images/illustrations/charaktere.png" alt="image"/>
+                    <p class="subhl">Informiere dich nochmal über deine Lieblingscharaktere der Reihe.</p>
+
+                    <div class="button moving-right">
+                        <div class="button__triangle button__triangle--left">
+                            <div class="button__triangle--left-inside"></div>
+                        </div>
+                            <a href="charaktere.html" class="button__text button__text--secondary">
+                                Zum Cast<img src="icons/bullet_right_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right">
+                            <div class="button__triangle--right-inside"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="teaser" id="btk" style="scroll-margin-top: 4rem;">
+            <div class="teaser__content">
+                <div class="content__text--33">
+                    <h2>Behind the Kills</h2>
+                    <img class="content__image--mobile" id="mobile" src="images/illustrations/btk.png" alt="image"/>
+                    <p class="subhl">Du hast keine Ahnung, wie man einen Comic liest, kennst Tanmoy nicht gut genug oder brauchst einen Blick hinter die Kulissen? Kriegst du!</p>
+
+                    <div class="button moving-right">
+                        <div class="button__triangle button__triangle--left">
+                            <div class="button__triangle--left-inside"></div>
+                        </div>
+                            <a href="kurzfassung.html" class="button__text button__text--secondary">
+                                Mehr über KC<img src="icons/bullet_right_white.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right">
+                            <div class="button__triangle--right-inside"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <img class="content__image--66" id="desktop" src="images/illustrations/btk.png" alt="image"/>
+            </div>
+        </div>
+         <!-- Promo2 -->
+         <div>
+            <iframe src="https://www.youtube.com/embed/tWJFr4MVAoY?si=HZs_SDm6BcoZrXQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="promo yellow">
+            <div class="promo__content">
+                <img class="content__image--100" src="images/startseite/kc1_cover_blank.jpg" alt="cover"/>
+                <div class="content__text--50">
+                    <h2>Vol.1 Remaster!</h2>
+                    <p>In einer Welt, in der Attentäter in einem geheimen Attentätersystem arbeiten, müssen zwei dieser Mitglieder ihren Alltag und ihre Morde unter einen Hut kriegen. Schwieriger wird es, wenn diese zwei Killer auch noch das komplette Gegenteil voneinander sind. Tom, ein jahrelang aktiver Attentäter im mittleren Alter mit Vorlieben für Alkohol, Zigaretten und Frauen, nimmt die 14-jährige Nachwuchskillerin Lana, mit Interesse an Popkultur, Mode und Videospielen, bei sich auf. Werden sie dieses Geheimnis vor ihren Mitmenschen, der Polizei und der Öffentlichkeit geheim halten können? Werden sie miteinander klarkommen?</p>
+                    <div class="text-block">
+                        <h4>Genre</h4>
+                        <p>Drama, Action, Comedy, Coming of Age, Mystery, Slice of Life, Psychological, Romance</p>
+                    </div>
+                    <div class="text__division--50">
+                        <div>
+                            <h4>Veröffentlichung</h4>
+                            <p>25.10.2023 (OG)</p>
+                        </div>
+                        <div>
+                            <h4>Seiten</h4>
+                            <p>180</p>
+                        </div>
+                    </div>
+                    <div class="button moving-diagonal">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="button__text button__text--primary">
+                                Zum Shop<img src="icons/bullet_topright_yellow.svg" alt="logo"/>
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="#0">
+                    <img src="icons/kc_logo.svg" alt="logo"/>
+                </a>
+            </div>
+            <div class="footer__images">
+                <img src="icons/chibi/tanmoy_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/lana_hands.svg" alt="chibi"/>
+                <img src="icons/chibi/tom_hands.svg" alt="chibi"/>
+            </div>
+            <div class="footer__right">
+                <div class="footer__links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="cookies.html">Cookies</a>
+                    <div class="footer__links--social-media">
+                        <a href="https://www.instagram.com/tanmoy1/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/instagram.svg" alt="social media"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tanmoy-roy-7bb7a1240/" target="_blank" rel="noopener noreferrer">
+                            <img src="icons/linkedin.svg" alt="social media"/>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copyright small">©2024 Tanmoy Roy. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+	</body>
+</html>
