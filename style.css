@@ -23,7 +23,7 @@
     /* var(--mobile-padding-sides) */
     --tablet-padding-sides: 2rem;
     --blue: #2B4DFF;
-    --yellow: #FFF800;
+    --yellow: #FFDF08;
     --black: #1C1919;
     --white: #EFEFEF;
 }
@@ -187,6 +187,9 @@ ol li{
     color: var(--yellow);
 }
 
+#outline--white{
+    border: 0.05rem solid var(--white);
+}
 
 /* Generel */
 *,
@@ -421,113 +424,6 @@ iframe{
 
 
 /* Animations*/
-@keyframes diagonal {
-  from {
-    transform: translate(-0.3rem, 0.3rem);
-  }
-  to {
-    transform: translate(0.3rem, -0.3rem);
-  }
-}
-
-.moving-diagonal:hover img:not(.btk__thumbnail){
-  animation-duration: 0.6s;
-  animation-name: diagonal;
-  animation-iteration-count: infinite;
-}
-
-@keyframes right {
-    from {
-      transform: translateX(-0.3rem);
-    }
-    to {
-      transform: translateX(0.3rem);
-    }
-  }
-  
-.moving-right:hover img:not(.btk__thumbnail){
-    animation-duration: 0.6s;
-    animation-name: right;
-    animation-iteration-count: infinite;
-}
-
-@keyframes left {
-    from {
-      transform: translateX(0.3rem);
-    }
-    to {
-      transform: translateX(-0.3rem);
-    }
-  }
-  
-.moving-left:hover img{
-    animation-duration: 0.6s;
-    animation-name: left;
-    animation-iteration-count: infinite;
-}
-
-@keyframes down {
-    from {
-      transform: translateY(-0.3rem);
-    }
-    to {
-      transform: translateY(0.3rem);
-    }
-  }
-  
-.moving-down:hover img{
-    animation-duration: 0.6s;
-    animation-name: down;
-    animation-iteration-count: infinite;
-}
-
-@keyframes chara {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1.05);
-    }
-  }
-  
-.moving-chara:hover img{
-    animation-duration: 0.6s;
-    animation-name: chara;
-    animation-iteration-count: infinite;
-}
-
-@keyframes accordion-open{ /* Bezieht sich auf das Icon*/
-    from {
-      transform: scale(0.5);
-    }
-    to {
-      transform: scale(1.5);
-    }
-  }
-  
-  .accordion__item:not(.accordion__item.active):hover .accordion__icon,
-  .subheader img:hover
-  {
-    animation-duration: 0.6s;
-    animation-name: accordion-open;
-    animation-iteration-count: infinite;
-  }
-
-@keyframes accordion-close{
-    from {
-      transform: scale(0.5) rotate(45deg);
-    }
-    to {
-      transform: scale(1.5) rotate(45deg);
-    }
-}
-
-.accordion__item.active .accordion__header:hover .accordion__icon
-{
-    animation-duration: 0.6s;
-    animation-name: accordion-close;
-    animation-iteration-count: infinite;
-}  
 
 @keyframes slide-down {
     from {
@@ -791,7 +687,7 @@ iframe{
 }
 
 .headline__content{
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .headline__content--left{
@@ -842,7 +738,12 @@ iframe{
 
 .steckbrief__content{
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
+.link{
+    text-decoration: underline;
+    margin-top: -1rem;
 }
 
 .cast{
@@ -880,6 +781,10 @@ iframe{
 .text__division{
     display: flex;
     justify-content: space-between;
+}
+
+.content__text--50 div:not(.button div, .promo__content div){
+    padding-top: 1.5rem;
 }
 
 .promo .content__text--50{
@@ -926,6 +831,115 @@ iframe{
         margin: 0 auto;
     }
 
+    /* Desktop-Animations */
+    @keyframes diagonal {
+        from {
+          transform: translate(-0.3rem, 0.3rem);
+        }
+        to {
+          transform: translate(0.3rem, -0.3rem);
+        }
+      }
+      
+      .moving-diagonal:hover img:not(.btk__thumbnail){
+        animation-duration: 0.6s;
+        animation-name: diagonal;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes right {
+          from {
+            transform: translateX(-0.3rem);
+          }
+          to {
+            transform: translateX(0.3rem);
+          }
+        }
+        
+      .moving-right:hover img:not(.btk__thumbnail){
+          animation-duration: 0.6s;
+          animation-name: right;
+          animation-iteration-count: infinite;
+      }
+      
+      @keyframes left {
+          from {
+            transform: translateX(0.3rem);
+          }
+          to {
+            transform: translateX(-0.3rem);
+          }
+        }
+        
+      .moving-left:hover img{
+          animation-duration: 0.6s;
+          animation-name: left;
+          animation-iteration-count: infinite;
+      }
+      
+      @keyframes down {
+          from {
+            transform: translateY(-0.3rem);
+          }
+          to {
+            transform: translateY(0.3rem);
+          }
+        }
+        
+      .moving-down:hover img{
+          animation-duration: 0.6s;
+          animation-name: down;
+          animation-iteration-count: infinite;
+      }
+      
+      @keyframes chara {
+          from {
+              transform: scale(0.8);
+          }
+          to {
+              transform: scale(1.05);
+          }
+        }
+        
+      .moving-chara:hover img{
+          animation-duration: 0.6s;
+          animation-name: chara;
+          animation-iteration-count: infinite;
+      }
+      
+      @keyframes accordion-open{ /* Bezieht sich auf das Icon*/
+          from {
+            transform: scale(0.5);
+          }
+          to {
+            transform: scale(1.5);
+          }
+        }
+        
+        .accordion__item:not(.accordion__item.active):hover .accordion__icon,
+        .subheader img:hover
+        {
+          animation-duration: 0.6s;
+          animation-name: accordion-open;
+          animation-iteration-count: infinite;
+        }
+      
+      @keyframes accordion-close{
+          from {
+            transform: scale(0.5) rotate(45deg);
+          }
+          to {
+            transform: scale(1.5) rotate(45deg);
+          }
+      }
+      
+      .accordion__item.active .accordion__header:hover .accordion__icon
+      {
+          animation-duration: 0.6s;
+          animation-name: accordion-close;
+          animation-iteration-count: infinite;
+      }  
+
     /* Desktop__Footer */
     .footer{
         flex-direction: row;
@@ -936,6 +950,10 @@ iframe{
     .footer__images{
         align-items: center;
         gap: 2rem;
+    }
+
+    .footer__links{
+        gap: 1rem;
     }
 
     /* Desktop__Buttons */
@@ -950,8 +968,8 @@ iframe{
         padding-right: 1rem;
     }
 
-     /* Desktop__Text-Sections */
-     .content__text--50{
+    /* Desktop__Text-Sections */
+    .content__text--50{
         width: 50vw;
     }
 
@@ -971,6 +989,8 @@ iframe{
         height: 100%;
         object-fit: cover;
         margin-left: calc((100vw - var(--max-content-width)) / 2 *-1); /* Berechnet die Margin um den Content herum für eine Seite und subtrahiert es von links für 0 Margin links */
+        position: sticky;
+        top: 4rem;
     }
 
     .content__image--66{
@@ -1033,7 +1053,6 @@ iframe{
         display: flex;
         justify-content: space-between;
         gap: 2rem;    
-        align-items: center;
     }
 
     .cta__content{
@@ -1141,8 +1160,8 @@ iframe{
         padding-right: var(--mobile-padding-sides);
     }
 
-    .footer__logo, .footer__images{
-        padding-bottom: 1.5rem;
+    .footer__logo, .footer__images, .footer__links{
+        padding-bottom: 2.5rem;
     }
 
     .charakter-select__content{
@@ -1199,8 +1218,8 @@ iframe{
         margin: 0 auto; /* Damit das funktioniert muss man vorher eine width bestimmen */
     }
 
-    .footer__links{
-        padding-top: 1rem;
+    .footer__logo, .footer__images, .footer__links{
+        padding-bottom: 2.5rem;
     }
 
     .content__image--100 {

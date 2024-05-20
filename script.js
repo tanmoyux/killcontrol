@@ -1,11 +1,19 @@
 /* Open when someone clicks on the span element */
 function openNav() {
 	document.getElementById("myNav").style.width = "100%";
+  var headers = document.getElementsByClassName("header");
+  for (var i = 0; i < headers.length; i++) {
+    headers[i].style.backgroundColor = "#1C1919"; /* Macht Hintergrund statt tarnsparent dunkel */
   }
+}
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
+  var headers = document.getElementsByClassName("header");
+  for (var i = 0; i < headers.length; i++) {
+    headers[i].style.backgroundColor = ""; /* Entfernt die Hintergrundfarbe*/
+  }
   }
 
 
