@@ -1,10 +1,10 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1771_2085)">
-<rect x="0.322388" y="18.9497" width="6" height="18" transform="rotate(-45 0.322388 18.9497)" fill="#FFF800"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.86495 11.4071L6.6864 12.5857L19.4143 25.3136L20.5929 24.1351L20.8285 23.8994L24.8069 19.9211C30.8107 13.9172 32.8286 6.20088 29.3139 2.68616C25.7991 -0.828556 18.0828 1.18928 12.079 7.19313L8.10061 11.1715L7.86495 11.4071Z" fill="#FFF800"/>
+<g clip-path="url(#clip0_2193_13546)">
+<rect x="0.322266" y="18.9492" width="6" height="18" transform="rotate(-45 0.322266 18.9492)" fill="#FFDF08"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.86507 11.4064L6.68652 12.585L19.4144 25.3129L20.593 24.1343L20.8287 23.8987L24.807 19.9203C30.8109 13.9165 32.8287 6.20015 29.314 2.68543C25.7993 -0.829289 18.0829 1.18855 12.0791 7.1924L8.10074 11.1707L7.86507 11.4064Z" fill="#FFDF08"/>
 </g>
 <defs>
-<clipPath id="clip0_1771_2085">
+<clipPath id="clip0_2193_13546">
 <rect width="32" height="32" fill="white"/>
 </clipPath>
 </defs>
