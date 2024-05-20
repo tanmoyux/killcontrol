@@ -11,6 +11,12 @@
         gtag('config', 'G-SQJ90HLWC3');
         </script>
 
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <title>Cookies</title>
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
@@ -18,19 +24,14 @@
         <link rel="stylesheet" href="cookiebanner.style.css">
         <script src="cookiebanner.script.js"></script>
         <style>
-              *{margin:0;padding:0;text-decoration:none;list-style:none;box-sizing:border-box;}
+            *{margin:0;padding:0;text-decoration:none;list-style:none;box-sizing:border-box;}
         </style>
         <script>
-              $(document).ready(function() {
-                  cookieBanner.init();
-              });
+            $(document).ready(function() {
+                cookieBanner.init();
+            });
         </script>
 
-		<meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <title>Cookies</title>
 	</head>
 	<body>
     <div class="transition-up">
@@ -47,7 +48,18 @@
                 <div class="content__text--50">
                     <h2>*CRUNCH*</h2>
                     <img class="content__image--mobile" id="mobile" src="images/illustrations/cookies.png" alt="image"/>
-                    <p class="subhl">Keine Sorge, eure Daten sind (noch) sicher :-)</p>
+                    <p class="subhl">Ich nutze Cookies um Aufrufe zu tracken, damit ich sehen kann wie gut es läuft. Verkaufe eure Daten nicht weiter, also gerne zustimmen :-)</p>
+
+                    <!-- Button zum Löschen aller Cookies -->
+                    <button id="delete-cookies-button">Alle Cookies löschen</button>
+
+                    <div class="button">
+                        <div class="button__triangle button__triangle--left"></div>
+                            <a href="#0" class="button__text button__text--primary" id="delete-cookies-button">
+                                Cookie-Refresh
+                            </a>
+                        <div class="button__triangle button__triangle--right"></div>
+                    </div>
 
                     <div class="button moving-left">
                         <div class="button__triangle button__triangle--left">
@@ -65,6 +77,7 @@
                 <img class="content__image--50" id="desktop" src="images/illustrations/cookies.png" alt="image"/>
             </div>
         </div>
+        
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo">
