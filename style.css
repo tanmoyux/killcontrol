@@ -46,6 +46,7 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 h2{
@@ -55,6 +56,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 h3{
@@ -64,6 +66,7 @@ h3{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 h4{
@@ -73,6 +76,7 @@ h4{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 .button a{
