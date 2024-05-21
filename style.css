@@ -46,7 +46,9 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
-    -webkit-hyphens: auto;
+    -webkit-hyphens: auto; /* For older versions of Safari */
+    -moz-hyphens: auto; /* For older versions of Firefox */
+    word-wrap: break-word;
 }
 
 h2{
@@ -56,7 +58,9 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
-    -webkit-hyphens: auto;
+    -webkit-hyphens: auto; /* For older versions of Safari */
+    -moz-hyphens: auto; /* For older versions of Firefox */
+    word-wrap: break-word;
 }
 
 h3{
@@ -66,7 +70,9 @@ h3{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
-    -webkit-hyphens: auto;
+    -webkit-hyphens: auto; /* For older versions of Safari */
+    -moz-hyphens: auto; /* For older versions of Firefox */
+    word-wrap: break-word;
 }
 
 h4{
@@ -76,7 +82,9 @@ h4{
     text-transform: uppercase;
     letter-spacing: 0.08ch;
     hyphens: auto;
-    -webkit-hyphens: auto;
+    -webkit-hyphens: auto; /* For older versions of Safari */
+    -moz-hyphens: auto; /* For older versions of Firefox */
+    word-wrap: break-word;
 }
 
 .button a{
