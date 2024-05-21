@@ -54,6 +54,7 @@ h2{
 	line-height: 2.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08ch;
+    hyphens: auto;
 }
 
 h3{
@@ -62,6 +63,7 @@ h3{
 	line-height: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 0.08ch;
+    hyphens: auto;
 }
 
 h4{
@@ -70,6 +72,7 @@ h4{
 	line-height: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.08ch;
+    hyphens: auto;
 }
 
 .button a{
@@ -409,7 +412,7 @@ iframe{
 
 .card__text{
     padding: 1rem;
-    outline: 0.1rem solid var(--black);
+    box-shadow: 0 0.1rem 0 var(--black) inset;
 }
 
 .card__text--top{
@@ -977,6 +980,7 @@ iframe{
 
     .content__text--33{
         width: 40%;
+        align-self: center;
     }
 
     .content__text-image{
@@ -997,6 +1001,10 @@ iframe{
 
     .content__image--66{
         width: 60%;
+    }
+
+    .content__image--66:not(.cta__content .content__image--66){
+        height: 100%;
     }
 
     .content__image--50{
@@ -1054,7 +1062,7 @@ iframe{
     {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;    
+        gap: 2rem;
     }
 
     .cta__content{
