@@ -996,6 +996,9 @@ iframe{
 
     .content__text--33{
         width: 40%;
+    }
+
+    .content__text--33:not(.comicleseguide__content .content__text--33){
         align-self: center;
     }
 
